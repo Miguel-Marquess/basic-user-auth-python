@@ -1,6 +1,5 @@
 # Sistema de Cadastro e Verificação de Login em Python
 
----
 
 Projeto em Python que implementa um sistema simples de cadastro e login com validação de dados usando Regex, armazenamento em JSON e proteção de senhas com hash SHA-256.
 
@@ -25,6 +24,7 @@ O foco do projeto é aplicar boas práticas iniciais de back-end, como:
 ---
 
 ```
+## Estrutura do projeto
 
 CADASTRO_VERIFICACAO_LOGIN/
 │
@@ -38,7 +38,6 @@ CADASTRO_VERIFICACAO_LOGIN/
 ├── main.py                  # Arquivo principal do sistema
 ├── README.md                # Documentação do projeto
 └── .gitignore
-
 ```
 
 ---
@@ -53,7 +52,7 @@ CADASTRO_VERIFICACAO_LOGIN/
 ---
 
 ## Como funciona 
----
+
 ### Cadastro
 
 1. O usuário informa:
@@ -90,7 +89,6 @@ git clone https://github.com/Miguel-Marquess/basic-user-auth-python.git
 
 ```
 python main.py
-
 ```
 
 ---
@@ -101,6 +99,8 @@ python main.py
 - é utilizado o algoritmo SHA-256
 - Projeto com foco didático
 
+---
+
 ## Objetivo do projeto
 
 - treinar lógica de programação 
@@ -109,4 +109,4 @@ python main.py
 
 ---
 
-***Projeto desenvolvido pensando puramente em estudo***
+***Projeto desenvolvido pensando puramente no aprendizado.***
