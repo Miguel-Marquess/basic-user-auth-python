@@ -10,5 +10,11 @@
         "cpf": "987.654.321-10",
         "telefone": "(84) 99876-1234",
         "senha": "89e0eed6a6a5d8355fa386991f3d2102cb53824ed97eeb3ad8e1874c68062d7a"
+    },
+    {
+        "email": "alice@gmail.com",
+        "cpf": "123.456.789-10",
+        "telefone": "(84) 99876-1234",
+        "senha": "5c0f3924df63acfc8e0a75f0e6e3ff50f2316152798627658b09cd0056a10999"
     }
 ]

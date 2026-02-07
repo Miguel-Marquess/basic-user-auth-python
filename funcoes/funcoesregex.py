@@ -1,5 +1,5 @@
 import re
-
+from funcoes.transformhash import *
 def validar_email():
     rule = r"^[\w\.-]+@[\w\.-]+\.\w+$"
     # email@empresa.endereço
@@ -37,3 +37,23 @@ def validar_telefone():
                 raise ValueError
         except ValueError:
             print('Digite um valor válido. ') 
+
+
+def validar_login(lista_dados, email_usuario):
+    for usuario in lista_dados:
+            if usuario["email"] == email_usuario:
+                while True:
+                    try:
+                        senha = transformar_hash(input("Digite sua senha: \n >>> "))
+                        if senha != usuario["senha"]:
+                            raise ValueError
+                        print("-"*40)
+                        print(f"Login feito com sucesso!")
+                        print("-"*40)  
+                        return True
+                    except ValueError:
+                        print("Senha errada! Digite novamente. ")
+
+    else:
+        print("Email não existe. ")
+        return False

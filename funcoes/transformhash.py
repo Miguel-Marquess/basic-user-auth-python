@@ -1,8 +1,8 @@
 import hashlib
 
 def transformar_hash(valor):
-    algoritimo = hashlib.sha256()
-    algoritimo.update(valor.encode())
-    return algoritimo.hexdigest()
+    algoritmo = hashlib.sha256()
+    algoritmo.update(valor.encode())
+    return algoritmo.hexdigest()
 
 

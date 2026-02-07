@@ -12,13 +12,12 @@ def obter_dados(nome_arquivo): #obtem dados json, se nao existir, cria se nao ti
             with open(nome_arquivo, 'w', encoding='utf-8') as j:
                 json.dump([], j)
 
-def adicionar_usuarios(arquivo_json, usuario):
-    try:
-        with open(arquivo_json, 'w', encoding='utf-8') as a:
-            json.dump(usuario, a, indent=4, ensure_ascii=False)
-            return 'Usuario adicionado com sucesso. '
-    except FileExistsError:
-        return 'Pasta nao existe.'
+def adicionar_lista(arquivo_json, lista):
+    obter_dados(arquivo_json) # garantir q o arquivo vai ter uma [] dentro dele
+    with open(arquivo_json, 'w', encoding='utf-8') as a:
+        json.dump(lista, a, indent=4, ensure_ascii=False)
+        return 'Sistema atualizado com sucesso. '
+    
     
 
 def cadastro():
